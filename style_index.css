@@ -6,22 +6,31 @@ body {
     align-items: center;
 }
 
-div.first {
-    width: 300px;
-    text-align: center;
-    border-style: solid;
-    border-radius: 30px;
+div.blue {
     border-color: #345dcf;
     background-color: #9bcbdc;
 }
 
-div.second {
+div.pink {
+    border-color: #cf346c;
+    background-color: #ea7ecb;
+}
+
+div.green {
+
+    border-color: #299d25;
+    background-color: #82ea7e;
+}
+
+div {
     width: 300px;
     text-align: center;
     border-style: solid;
     border-radius: 30px;
-    border-color: #cf346c;
-    background-color: #ea7ecb;
+    border-width: 5px;
+    -webkit-box-shadow: inset 2px 2px #000000AA;
+    -moz-box-shadow: inset 2px 2px #000000AA;
+    box-shadow: inset 2px 2px #000000AA;
 }
 
 a {
