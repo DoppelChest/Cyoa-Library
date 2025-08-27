@@ -13,55 +13,69 @@
 
 <body>
     <button id="toggleBtn">X</button>
-    <form>
+    <form class="general">
+
+
+
         <div class="main">
+            <h1><u>Erotic Education:</u><br>Student Application Form<br>CYOA</h1>
+        </div>
+
+
+
+        <div class="main">
+            <h2>Applicant's Name & Surname</h2>
             <div>
                 <div>
-                    <h1><u>Erotic Education:</u><br>Student Application Form<br>CYOA</h1>
+                    <input type="text" name="name">
                 </div>
             </div>
+        </div>
 
-            <h2>1. Applicant's Legal Gender</h2>
 
+
+
+        <div class="main">
+            <h2>Applicant's Legal Gender</h2>
             <div>
                 <div>
-                    <img
-                        src="https://wimg.rule34.xxx/thumbnails/2018/thumbnail_6ceb3804b3ae5fb0dc66a3dffdb0297e.jpg?12696112">
+                    <img src="https://rule34.xxx//samples/2018/sample_6ceb3804b3ae5fb0dc66a3dffdb0297e.jpg?12696112">
                     <h2>Female</h2>
                     <input name="gender" type="radio">
                 </div>
                 <div>
-                    <img
-                        src="https://wimg.rule34.xxx/thumbnails/4153/thumbnail_bd789ca94cb282bc4201376decdb6129.jpg?14607997">
+                    <img src="https://rule34.xxx//samples/4153/sample_bd789ca94cb282bc4201376decdb6129.jpg?14607997">
                     <h2>Futa</h2>
                     <input name="gender" type="radio">
                 </div>
                 <div>
-                    <img
-                        src="https://wimg.rule34.xxx/thumbnails/717/thumbnail_122e9071f703a8883ee995c481440d7a.jpg?13365700">
+                    <img src="https://rule34.xxx//samples/717/sample_122e9071f703a8883ee995c481440d7a.jpg?13365700">
                     <h2>Male</h2>
                     <input name="gender" type="radio">
                 </div>
             </div>
+        </div>
 
+
+        <div class="main">
             <div>
                 <div>
-                    <input name="course_type" type="radio">
+                    <input name="course_type" type="checkbox">
                 </div>
 
                 <div>
-                    <input name="course_type" type="radio">
+                    <input name="course_type" type="checkbox">
                 </div>
-                <div>test</div>
                 <div>test</div>
             </div>
         </div>
+
     </form>
 
 </body>
 <script>
     const toggleBtn = document.getElementById('toggleBtn');
-    const mainDivs = document.querySelectorAll('.main');
+    const mainDivs = document.querySelectorAll('.general');
     const originalTitle = document.title;   // Save the original page title
     const hiddenTitle = "Black Screen";   // Title when div is hidden
 

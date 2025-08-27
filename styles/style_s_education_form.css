@@ -7,12 +7,22 @@ body {
     margin: 20px 0px;
 }
 
+/*Form And Divs*/
+
 form {
+    padding: 10px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    border-color: #cf346c;
+    background-image: url("../images/background.png");
+    width: 80%;
+    text-align: center;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 5px;
+    gap: 10px;
 }
 
 div.main {
@@ -22,8 +32,8 @@ div.main {
     justify-content: center;
     align-items: center;
     border-color: #cf346c;
-    background-color: #ea7ecb;
-    width: 80%;
+    background-color: #e354ba;
+    width: 100%;
     text-align: center;
     border-style: solid;
     border-radius: 30px;
@@ -43,8 +53,6 @@ div.main div {
 
 }
 
-
-
 div.main div div {
     flex: 1;
     text-align: center;
@@ -63,13 +71,20 @@ div.main div div {
     box-shadow: 2px 2px #000000AA;
     margin: 10px;
     gap: 10px;
-    padding: 5px 0px 0px 0px;
+    padding: 10px
 }
 
+h2 {
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+
+/*Input in div*/
 div.main div div input {
     margin-top: auto;
 }
 
+/*images*/
 img {
     width: 80%;
     height: 80%;
@@ -85,24 +100,22 @@ img {
     box-shadow: 2px 2px #000000AA;
 }
 
-/* Hide the default radio */
+/*Radio Button*/
 input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     width: 30px;
     height: 30px;
-    margin: 10px;
     border: 3px solid #cf346c;
     border-radius: 50%;
-    background-color: #ea7ecb;
+    background-color: white;
     position: relative;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     box-shadow: 2px 2px #000000AA;
 }
 
-/* Add custom check indicator when selected */
 input[type="radio"]::after {
     content: "";
     position: absolute;
@@ -116,19 +129,66 @@ input[type="radio"]::after {
     transition: transform 0.2s ease-in-out;
 }
 
-h2 {
-    padding: 0px;
-    margin: 0px;
-}
-
-/* Show the dot when checked */
 input[type="radio"]:checked::after {
     transform: translate(-50%, -50%) scale(1);
 }
 
-/* Optional hover effect */
 input[type="radio"]:hover {
-    box-shadow: 2px 2px 4px #000000AA;
+    box-shadow: 1px 1px #000000AA;
+}
+
+/*Checkbox*/
+input[type="checkbox"] {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 3px solid #cf346c;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 2px #000000AA;
+}
+
+input[type="checkbox"]:hover {
+    box-shadow: 1px 1px #00000055;
+}
+
+input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: #cf346c;
+    border-radius: 2px;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+input[type="checkbox"]:checked::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+input[type="text"] {
+    text-align: center;
+    position: relative;
+    width: 70%;
+    height: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    border: 3px solid #cf346c;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 2px #000000AA;
 }
 
 #toggleBtn {
