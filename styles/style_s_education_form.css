@@ -7,6 +7,18 @@ body {
     margin: 20px 0px;
 }
 
+/*label in divs*/
+div.main div div label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    gap: 10px;
+}
+
 /*Form And Divs*/
 
 form {
@@ -16,6 +28,7 @@ form {
     justify-content: center;
     align-items: center;
     border-color: #cf346c;
+    background-color: #ea7ecb;
     background-image: url("../images/background.png");
     width: 80%;
     text-align: center;
@@ -32,7 +45,7 @@ div.main {
     justify-content: center;
     align-items: center;
     border-color: #cf346c;
-    background-color: #e354ba;
+    background-color: #e354baAA;
     width: 100%;
     text-align: center;
     border-style: solid;
@@ -189,6 +202,7 @@ input[type="text"] {
     outline: none;
     transition: all 0.2s ease-in-out;
     box-shadow: 2px 2px #000000AA;
+    font-weight: bolder;
 }
 
 #toggleBtn {
