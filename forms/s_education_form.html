@@ -9,6 +9,8 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/style_s_education_form.css'>
 </head>
 
+
+
 <body>
     <button id="toggleBtn">X</button>
     <form>
@@ -59,14 +61,20 @@
 </body>
 <script>
     const toggleBtn = document.getElementById('toggleBtn');
-    const mainDiv = document.querySelector('div.main');
+    const mainDivs = document.querySelectorAll('.main');
+    const originalTitle = document.title;   // Save the original page title
+    const hiddenTitle = "Black Screen";   // Title when div is hidden
 
     toggleBtn.addEventListener('click', () => {
-        if (mainDiv.style.display === 'none') {
-            mainDiv.style.display = 'flex'; // Show it again
-        } else {
-            mainDiv.style.display = 'none'; // Hide it
-        }
+        mainDivs.forEach(div => {
+            if (div.style.display === 'none') {
+                div.style.display = 'flex';      // Show the div
+                document.title = originalTitle;   // Restore page title
+            } else {
+                div.style.display = 'none';      // Hide the div
+                document.title = hiddenTitle;    // Change page title
+            }
+        });
     });
 </script>
 
