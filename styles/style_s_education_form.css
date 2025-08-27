@@ -231,11 +231,7 @@ input[type="number"] {
 /* File input */
 input[type="file"] {
     opacity: 0;
-
-    height: 50px;
     position: absolute;
-    left: 0;
-    top: 0;
     cursor: pointer;
 }
 

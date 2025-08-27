@@ -51,10 +51,11 @@
             <h2>Applicant's Photo/Image</h2>
             <div>
                 <div>
-                    <label class="file-input-label">
+                    <label for="customFileInput" class="file-input-label">
                         Choose File
-                        <input type="file" id="customFileInput" onchange="updateFilePreview()" name="avatar">
                     </label>
+                    <input type="file" id="customFileInput" onchange="updateFilePreview()" name="avatar">
+
                     <span class="file-name" id="fileName">No file chosen</span>
                     <section id="imagePreview"></section>
                 </div>
