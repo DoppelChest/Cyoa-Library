@@ -161,6 +161,7 @@ input[type="radio"]:hover {
     }
 
     #toggleBtn {
+        top: auto;
         bottom: 10px;
         left: 10px;
     }
