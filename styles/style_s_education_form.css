@@ -198,7 +198,7 @@ input[type="number"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: white;
+    background-color: #ea7ecb;
     border: 3px solid #cf346c;
     border-radius: 4px;
     outline: none;
@@ -207,25 +207,13 @@ input[type="number"] {
     font-weight: bolder;
 }
 
-/* Hide default arrows (optional) */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    background-color: white;
 }
 
-/* Add custom arrows look */
-input[type="number"]::-webkit-inner-spin-button {
-    background: #cf346c;
-    border-radius: 4px;
-    width: 20px;
-    height: 30px;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="24" fill="white"><polygon points="6,0 12,6 0,6"/><polygon points="0,18 12,18 6,24"/></svg>');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 12px 24px;
-    cursor: pointer;
-}
+
 
 /* File input */
 input[type="file"] {
