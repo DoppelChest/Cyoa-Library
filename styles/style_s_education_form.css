@@ -213,6 +213,17 @@ input[type="number"]:focus {
     background-color: white;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 
 
 /* File input */
@@ -230,7 +241,7 @@ input[type="file"] {
     justify-content: center;
     align-items: center;
     background-color: #cf346c;
-    color: white;
+    color: black;
     font-weight: bold;
     border-radius: 8px;
     padding: 10px 0;
@@ -253,7 +264,7 @@ input[type="file"] {
     display: block;
     margin-top: 10px;
     font-size: 14px;
-    color: white;
+    color: black;
     font-weight: bold;
 }
 
