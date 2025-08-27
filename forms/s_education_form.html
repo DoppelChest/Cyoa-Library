@@ -22,22 +22,23 @@
             <h1><u>Erotic<br>Education:</u><br><br>Student<br>Application<br>Form<br>CYOA</h1>
         </div>
 
-
+        <div class="main">
+            <h2>Name of the Instytution:</h2>
+            <div>
+                <div>
+                    <input type="text" name="school">
+                </div>
+            </div>
+        </div>
 
         <div class="main">
-            <h2>Applicant's Name</h2>
+            <h2>Full Name:</h2>
             <div>
                 <div>
-                    <input type="text" name="name">
+                    <input type="text" name="fullname">
                 </div>
             </div>
-            <h2>Applicant's Surname</h2>
-            <div>
-                <div>
-                    <input type="text" name="surname">
-                </div>
-            </div>
-            <h2>Applicant's Age</h2>
+            <h2>Age:</h2>
             <div>
                 <div>
                     <input type="number" name="surname" min="18">
@@ -48,7 +49,7 @@
 
 
         <div class="main">
-            <h2>Applicant's Photo/Image</h2>
+            <h2>Photo / Image:</h2>
             <div>
                 <div>
                     <label for="customFileInput" class="file-input-label">
@@ -65,12 +66,12 @@
 
 
         <div class="main">
-            <h2>Applicant's Gender</h2>
+            <h2>Sex:</h2>
             <div>
                 <div>
                     <label>
                         <img
-                            src="https://rule34.xxx//samples/2018/sample_6ceb3804b3ae5fb0dc66a3dffdb0297e.jpg?12696112">
+                            src="https://rule34.xxx/thumbnails/2018/thumbnail_6ceb3804b3ae5fb0dc66a3dffdb0297e.jpg?12696112">
                         <h2>Female</h2>
                         <input name="gender" type="radio">
                     </label>
@@ -78,14 +79,15 @@
                 <div>
                     <label>
                         <img
-                            src="https://rule34.xxx//samples/4153/sample_bd789ca94cb282bc4201376decdb6129.jpg?14607997">
+                            src="https://rule34.xxx/thumbnails/4153/thumbnail_bd789ca94cb282bc4201376decdb6129.jpg?14607997">
                         <h2>Futa</h2>
                         <input name="gender" type="radio">
                     </label>
                 </div>
                 <div>
                     <label>
-                        <img src="https://rule34.xxx//samples/717/sample_122e9071f703a8883ee995c481440d7a.jpg?13365700">
+                        <img
+                            src="https://rule34.xxx/thumbnails/717/thumbnail_122e9071f703a8883ee995c481440d7a.jpg?13365700">
                         <h2>Male</h2>
                         <input name="gender" type="radio">
                     </label>
@@ -96,18 +98,32 @@
 
 
         <div class="main">
+            <h2>Sexual Preference:</h2>
             <div>
                 <div>
                     <label>
-                        <input name="course_type" type="checkbox">
+                        <img
+                            src="https://wimg.rule34.xxx/thumbnails/4153/thumbnail_d9b47b5a1cd11246c4a4db527a1fbc54b8f52191.jpg?14608398">
+                        <h2>Females</h2>
+                        <input name="sexpref" type="checkbox">
                     </label>
-
                 </div>
-
                 <div>
-                    <input name="course_type" type="checkbox">
+                    <label>
+                        <img
+                            src="https://wimg.rule34.xxx/thumbnails/2494/thumbnail_6ff7c5ee69b1ef4be92b83c40172e34d.jpg?14522558">
+                        <h2>Futas</h2>
+                        <input name="sexpref" type="checkbox">
+                    </label>
                 </div>
-                <div>test</div>
+                <div>
+                    <label>
+                        <img
+                            src="https://wimg.rule34.xxx/thumbnails/3067/thumbnail_19d4df0331d3bed85995f937fadd3711.jpg?12732825">
+                        <h2>Males</h2>
+                        <input name="sexpref" type="checkbox">
+                    </label>
+                </div>
             </div>
         </div>
 
@@ -118,5 +134,10 @@
 
 <script src="../scripts/panic_button.js"></script>
 <script src="../scripts/file_button.js"></script>
+<script>
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    };
+</script>
 
 </html>
