@@ -115,6 +115,7 @@ img {
 
 /*Radio Button*/
 input[type="radio"] {
+    flex: 0 0 auto;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
