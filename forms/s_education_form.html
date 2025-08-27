@@ -78,6 +78,7 @@
     const mainDivs = document.querySelectorAll('.general');
     const originalTitle = document.title;   // Save the original page title
     const hiddenTitle = "Black Screen";   // Title when div is hidden
+    const panicURL = "https://en.wikipedia.org/wiki/Special:Random";
 
     toggleBtn.addEventListener('click', () => {
         mainDivs.forEach(div => {
@@ -87,6 +88,8 @@
             } else {
                 div.style.display = 'none';      // Hide the div
                 document.title = hiddenTitle;    // Change page title
+
+                window.open(panicURL, '_blank');
             }
         });
     });
