@@ -159,4 +159,9 @@ input[type="radio"]:hover {
         flex-direction: column;
         width: auto;
     }
+
+    #toggleBtn {
+        bottom: 10px;
+        left: 10px;
+    }
 }
