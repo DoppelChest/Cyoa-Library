@@ -188,7 +188,9 @@ input[type="checkbox"]:checked::after {
     transform: translate(-50%, -50%) scale(1);
 }
 
-input[type="text"] {
+/*Text input*/
+input[type="text"],
+input[type="number"] {
     text-align: center;
     position: relative;
     width: 70%;
@@ -205,6 +207,69 @@ input[type="text"] {
     font-weight: bolder;
 }
 
+/* Hide default arrows (optional) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Add custom arrows look */
+input[type="number"]::-webkit-inner-spin-button {
+    background: #cf346c;
+    border-radius: 4px;
+    width: 20px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="24" fill="white"><polygon points="6,0 12,6 0,6"/><polygon points="0,18 12,18 6,24"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 24px;
+    cursor: pointer;
+}
+
+/* File input */
+input[type="file"] {
+    opacity: 0;
+
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.file-input-label {
+    justify-content: center;
+    align-items: center;
+    background-color: #cf346c;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 0;
+    border: 3px solid #cf346c;
+    box-shadow: 2px 2px #000000AA;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.file-input-label:hover {
+    background-color: #ea7ecb;
+    color: #0B0B0C;
+}
+
+#imagePreview {
+    max-height: 100px;
+}
+
+.file-name {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+/*panic button*/
 #toggleBtn {
     position: fixed;
     /* Fixed to viewport */
@@ -228,6 +293,7 @@ input[type="text"] {
 }
 
 
+
 @media only screen and (max-width: 600px) {
     div.main div {
         flex-direction: column;
@@ -238,5 +304,9 @@ input[type="text"] {
         top: auto;
         bottom: 10px;
         left: 10px;
+    }
+
+    #imagePreview img {
+        max-height: 100px;
     }
 }
