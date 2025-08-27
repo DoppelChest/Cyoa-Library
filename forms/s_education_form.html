@@ -4,12 +4,13 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Erotic Education Cyoa</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/style_s_education_form.css'>
 </head>
 
 <body>
+    <button id="toggleBtn">X</button>
     <form>
         <div class="main">
             <div>
@@ -18,12 +19,12 @@
                 </div>
             </div>
 
-            <h2>1. Applicant's Gender</h2>
+            <h2>1. Applicant's Legal Gender</h2>
 
             <div>
                 <div>
                     <img
-                        src="https://wimg.rule34.xxx/thumbnails/1079/thumbnail_22c2cd298bd3d69a6d7caf9f9e3185b4.jpg?14601888">
+                        src="https://wimg.rule34.xxx/thumbnails/2018/thumbnail_6ceb3804b3ae5fb0dc66a3dffdb0297e.jpg?12696112">
                     <h2>Female</h2>
                     <input name="gender" type="radio">
                 </div>
@@ -56,5 +57,17 @@
     </form>
 
 </body>
+<script>
+    const toggleBtn = document.getElementById('toggleBtn');
+    const mainDiv = document.querySelector('div.main');
+
+    toggleBtn.addEventListener('click', () => {
+        if (mainDiv.style.display === 'none') {
+            mainDiv.style.display = 'flex'; // Show it again
+        } else {
+            mainDiv.style.display = 'none'; // Hide it
+        }
+    });
+</script>
 
 </html>

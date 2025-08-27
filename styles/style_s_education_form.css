@@ -131,6 +131,29 @@ input[type="radio"]:hover {
     box-shadow: 2px 2px 4px #000000AA;
 }
 
+#toggleBtn {
+    position: fixed;
+    /* Fixed to viewport */
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    /* Ensure it's on top */
+    background-color: #cf346c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 2px 2px #000000AA;
+    transition: background-color 0.2s ease;
+}
+
+#toggleBtn:hover {
+    background-color: #ea7ecb;
+}
+
+
 @media only screen and (max-width: 600px) {
     div.main div {
         flex-direction: column;
