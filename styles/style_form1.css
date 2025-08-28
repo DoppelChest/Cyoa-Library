@@ -15,7 +15,15 @@ body {
     margin: 20px 0px;
 }
 
-
+hr {
+    color: var(--ink);
+    border: 3px var(--ink);
+    border-style: solid;
+    width: 100%;
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
+}
 
 
 /*Page of the form (best used on <form> tag)*/
@@ -32,7 +40,7 @@ body {
     border-style: solid;
     border-radius: 10px;
     border-width: 5px;
-    gap: 20px;
+
     -webkit-box-shadow: 2px 2px #000000AA;
     -moz-box-shadow: 2px 2px #000000AA;
     box-shadow: 2px 2px #000000AA;
@@ -44,16 +52,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-color: #cf346c;
-    background-color: #e354baAA;
     width: 100%;
     text-align: center;
-    border-style: solid;
-    border-radius: 30px;
-    border-width: 5px;
-    -webkit-box-shadow: inset 2px 2px #000000AA;
-    -moz-box-shadow: inset 2px 2px #000000AA;
-    box-shadow: inset 2px 2px #000000AA;
+    padding: auto;
 }
 
 .horizontal {
@@ -67,12 +68,13 @@ body {
 }
 
 .vertical {
-    width: 100%;
+    width: 80%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+
 }
 
 .label {
@@ -84,6 +86,7 @@ body {
     align-items: center;
     text-align: center;
     gap: 10px;
+    margin: 10px;
 
 }
 
@@ -104,7 +107,7 @@ body {
 
 /*images*/
 .label img {
-    width: 80%;
+    width: 100%;
     height: 80%;
     object-fit: cover;
     border-color: var(--ink);
@@ -292,8 +295,16 @@ input[type="file"] {
     -webkit-box-shadow: 2px 2px var(--shadow);
     -moz-box-shadow: 2px 2px var(--shadow);
     box-shadow: 2px 2px var(--shadow);
-    transition: background-color 0.2s ease;
+    transition: opacity 0.3s ease, background-color 0.2s ease;
     padding: 5px;
+}
+
+#panicBtn.panic-mode {
+    opacity: 0.01;
+}
+
+#panicBtn.panic-mode:hover {
+    opacity: 1;
 }
 
 #panicBtn:hover {
@@ -301,6 +312,8 @@ input[type="file"] {
     -moz-box-shadow: 1px 1px var(--shadow);
     box-shadow: 1px 1px var(--shadow);
 }
+
+
 
 
 
