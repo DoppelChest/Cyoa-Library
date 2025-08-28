@@ -25,9 +25,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="true"
-     inkscape:zoom="1.066"
-     inkscape:cx="1165.5723"
-     inkscape:cy="84.896812"
+     inkscape:zoom="0.53299999"
+     inkscape:cx="287.9925"
+     inkscape:cy="308.6304"
      inkscape:window-width="1366"
      inkscape:window-height="705"
      inkscape:window-x="-8"
@@ -49,7 +49,7 @@
        inkscape:export-filename="gender1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" /><inkscape:page
-       x="230"
+       x="290"
        y="0"
        width="170"
        height="250.00002"
@@ -57,7 +57,7 @@
        inkscape:export-filename="gender2.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" /><inkscape:page
-       x="470"
+       x="570"
        y="0"
        width="170"
        height="250.00002"
@@ -65,30 +65,45 @@
        inkscape:export-filename="gender3.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" /><inkscape:page
-       x="710"
-       y="0"
+       x="0"
+       y="300"
        width="170"
-       height="250.00002"
+       height="250"
        id="page14252"
        inkscape:export-filename="sexpref1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" /><inkscape:page
-       x="950"
-       y="0"
+       x="290"
+       y="300"
        width="170"
        height="250.00002"
        id="page14254"
        inkscape:export-filename="sexpref2.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" /><inkscape:page
-       x="1170"
-       y="0"
+       x="570"
+       y="300"
        width="170"
-       height="250.00002"
+       height="250"
        id="page14256"
        inkscape:export-filename="sexpref3.png"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" /></sodipodi:namedview><defs
+       inkscape:export-ydpi="96" /><inkscape:page
+       x="10"
+       y="600"
+       width="170"
+       height="250"
+       id="page14357" /><inkscape:page
+       x="290"
+       y="600"
+       width="170"
+       height="250"
+       id="page14359" /><inkscape:page
+       x="570"
+       y="600"
+       width="170"
+       height="250"
+       id="page14361" /></sodipodi:namedview><defs
      id="defs2" /><g
      inkscape:label="Warstwa 1"
      inkscape:groupmode="layer"
@@ -2782,7 +2797,7 @@ cA7gcYjuFT6ABxQCBOyRg4ADcleo6pVHGsYUEPHBWWucMlW7rdptCCEXGacijoDSNI3r0AAQj+v/
 4/XfYmu44L6fN0QAAAAASUVORK5CYII=
 "
        id="image14225"
-       x="124.5"
+       x="184.5"
        y="0" /><image
        width="170"
        height="254.49103"
@@ -4090,8 +4105,8 @@ OSfE8hz/yPlCspV5SoaABJZBGegv+TQAIPvh4a/cBjiiH4xOAnJFBaPjYLQfXOVvPr3iqVgJwIWv
 9a8xLa6uHicT/wAAAABJRU5ErkJggg==
 "
        id="image14237"
-       x="400"
-       y="0"
+       x="500"
+       y="-2.000001e-07"
        style="stroke-width:0.982353" /><image
        width="279.01785"
        height="250"
@@ -5311,8 +5326,8 @@ WOXODPBgZnPbfTHXS8of+SJZALdw3ylszExDiZbhZp/s5MGi2l3LE3DPj/1/Ae1t+N8GIC2dAAAA
 AElFTkSuQmCC
 "
        id="image14280"
-       x="590"
-       y="0"
+       x="-120"
+       y="300"
        style="stroke-width:0.896" /><image
        width="171"
        height="250"
@@ -6664,8 +6679,8 @@ zuNT0m18FBj5E021JKoq730F3KlT/cnXv38JAkhygYQkypo6J4/PJv8zN+T/0/V/ANe+KWVIRvUp
 AAAAAElFTkSuQmCC
 "
        id="image14307"
-       x="880"
-       y="0" /><image
+       x="220"
+       y="300" /><image
        width="250"
        height="250"
        preserveAspectRatio="none"
@@ -8416,5 +8431,5 @@ NRi+gRBR4r3V3vPjs+35kYmQ6kR9Uojfd6X/Q3CcJzW2G4bxZEQgoAiehQQDAAlCCBKj+BSSUZ+r
 kEkq/I3LI6rEosqZUnnIAmUbVpqVDs4C0D/jdluZnd9Z8gAAAABJRU5ErkJggg==
 "
        id="image14319"
-       x="1090"
-       y="0" /></g></svg>
+       x="490"
+       y="300" /></g></svg>

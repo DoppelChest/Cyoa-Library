@@ -1,7 +1,7 @@
-const toggleBtn = document.getElementById('toggleBtn');
-const mainDivs = document.querySelectorAll('.general');
+const toggleBtn = document.getElementById('panicBtn');
+const mainDivs = document.querySelectorAll('.page');
 const originalTitle = document.title;   // Save the original page title
-const hiddenTitle = "Black Screen";   // Title when div is hidden
+const hiddenTitle = "Math Background";   // Title when div is hidden
 
 toggleBtn.addEventListener('click', () => {
     mainDivs.forEach(div => {
