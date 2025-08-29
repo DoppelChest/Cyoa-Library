@@ -5,7 +5,7 @@ function updateFilePreview() {
 
     if (input.files && input.files[0]) {
         const file = input.files[0];
-        fileName.textContent = file.name;
+        fileName.textContent = "";
 
         if (file.type.startsWith('image/')) {
             const reader = new FileReader();

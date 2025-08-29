@@ -20,31 +20,28 @@
 
         <div class="main">
             <h1>"Special" education program - New student application form<br>CYOA</h1>
+            <hr>
         </div>
 
-        <hr>
+
 
         <div class="main">
             <h2>Name of the Instytution:</h2>
-            <div class="horizontal">
-                <div>
-                    <input type="text" name="school">
-                </div>
+            <div class="vertical">
+                <input type="text" name="school">
             </div>
         </div>
 
+
+
         <div class="main">
             <h2>Full Name:</h2>
-            <div>
-                <div>
-                    <input type="text" name="fullname">
-                </div>
+            <div class="vertical">
+                <input type="text" name="fullname">
             </div>
             <h2>Age:</h2>
-            <div>
-                <div>
-                    <input type="number" name="surname" min="18">
-                </div>
+            <div class="vertical">
+                <input type="number" name="surname" min="18">
             </div>
         </div>
 
@@ -53,20 +50,21 @@
         <div class="main">
             <h2>Photo / Image:</h2>
             <div class="vertical">
-                <label for="customFileInput" class="file-input-label label">
+                <label style="margin-bottom: 0; width: 20%;" for="customFileInput" class="file-input-label label">
                     Choose File
                 </label>
-                <input type="file" id="customFileInput" onchange="updateFilePreview()" name="avatar">
+                <input style="display: none;" type="file" id="customFileInput" onchange="updateFilePreview()"
+                    name="avatar">
 
                 <span class="file-name" id="fileName">No file chosen</span>
-                <section id="imagePreview"></section>
+                <section style="margin-bottom: 20px;" id="imagePreview"></section>
             </div>
         </div>
 
 
 
         <div class="main">
-            <h2>Sex:</h2>
+            <h1>Sex:</h1>
             <div class="horizontal">
                 <label class="label pointer">
                     <img src="../images/gender1.png">
@@ -90,7 +88,7 @@
 
 
         <div class="main">
-            <h2>Sexual Preference:</h2>
+            <h1>Sexual Preference:</h1>
             <div class="horizontal">
                 <label class="label pointer">
                     <img src="../images/sexpref1.png">
