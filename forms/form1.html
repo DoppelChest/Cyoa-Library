@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Erotic Education Cyoa</title>
+    <title>Special Education Program</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/style_form1.css'>
 
@@ -57,7 +57,7 @@
                     name="avatar">
 
                 <span class="file-name" id="fileName">No file chosen</span>
-                <section style="margin-bottom: 20px;" id="imagePreview"></section>
+                <section id="imagePreview"></section>
             </div>
         </div>
 
@@ -86,6 +86,30 @@
         </div>
 
 
+        <div class="main">
+            <h1>Degree Program:</h1>
+            <div class="horizontal">
+                <label class="label pointer">
+                    <img src="">
+                    <h2>Submissive's degree</h2>
+                    3 years untill graduation
+                    <input name="degree" type="radio">
+                </label>
+                <label class="label pointer">
+                    <img src="">
+                    <h2>Switch's degree</h2>
+                    5 years untill graduation
+                    <input name="degree" type="radio">
+                </label>
+                <label class="label pointer">
+                    <img src="">
+                    <h2>Dominant's degree</h2>
+                    3 years untill graduation
+                    <input name="degree" type="radio">
+                </label>
+            </div>
+        </div>
+
 
         <div class="main">
             <h1>Sexual Preference:</h1>
@@ -107,8 +131,87 @@
                 </label>
             </div>
         </div>
+
+
+        <div class="main">
+            <h1>Classes:</h1>
+            <div class="horizontal">
+                <div class="vertical bordered">
+                    <h2>Monday:</h2>
+                    <label class="label">
+                        <h3>8:00 - 9:45</h3>
+                        <select class="classes"></select>
+                    </label>
+                    <label class="label">
+                        <h3>10:00 - 10:45</h3>
+                        <select class="classes"></select>
+                    </label>
+                    <label class="label">
+                        <select class="classes"></select>
+                    </label>
+                </div>
+                <div class="vertical bordered">
+                    <h2>Tuesday:</h2>
+                    <label class="label">
+                        <h3>8:00 - 9:45</h3>
+                        <select class="classes"></select>
+                    </label>
+                    <label class="label">
+                        <select class="classes"></select>
+                    </label>
+                    <label class="label">
+                        <select class="classes"></select>
+                    </label>
+                </div>
+                <div class="vertical bordered">
+                    <h2>Wednesday:</h2>
+                    <label class="label">
+                        <select class="classes"></select>
+                    </label>
+                    <label class="label">
+                        <select class="classes"></select>
+                    </label>
+                    <label class="label">
+                        <select class="classes"></select>
+                    </label>
+                </div>
+                <div class="vertical bordered">
+                    <h2>Thursday:</h2>
+                    <label class="label">
+                        <select class="classes"></select>
+                    </label>
+                    <label class="label">
+                        <select class="classes"></select>
+                    </label>
+                    <label class="label">
+                        <select class="classes"></select>
+                    </label>
+                </div>
+                <div class="vertical bordered">
+                    <h2>Friday:</h2>
+                    <label class="label">
+                        <select class="classes"></select>
+                    </label>
+                    <label class="label">
+                        <select class="classes"></select>
+                    </label>
+                    <label class="label">
+                        <select class="classes"></select>
+                    </label>
+                </div>
+            </div>
+        </div>
+
     </form>
 </body>
+
+<template id="options-classes">
+    <option></option>
+    <option>bondage</option>
+    <option>servicing</option>
+    <option>exhibitionism</option>
+    <option>dancing</option>
+</template>
 
 <script src="../scripts/panic_button.js"></script>
 <script src="../scripts/file_button.js"></script>
@@ -116,6 +219,13 @@
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);
     };
+</script>
+
+<script>
+    const template = document.getElementById('options-classes').content;
+    document.querySelectorAll('select.classes').forEach(select => {
+        select.appendChild(template.cloneNode(true));
+    });
 </script>
 
 </html>
