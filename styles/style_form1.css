@@ -86,7 +86,6 @@ hr {
 
 .label {
     flex: 1;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -100,6 +99,7 @@ hr {
 
 .label:has(img) {
     border-top: none;
+    width: 100%;
 }
 
 .label:has(select) {
@@ -345,13 +345,14 @@ input[type="file"] {
 
 
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .horizontal {
         flex-direction: column;
         align-items: center;
         width: auto;
+
     }
+
 
     #panicBtn {
         top: auto;
