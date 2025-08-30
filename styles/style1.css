@@ -126,6 +126,11 @@ hr {
     border-width: 6px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    aspect-ratio: 2 / 3;
+}
+
+.label:has(select)>img {
+    aspect-ratio: 1 / 1;
 }
 
 .label:has(select) {
