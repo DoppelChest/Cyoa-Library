@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>"Erotic Education"</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/style1.css'>
+
+</head>
+
+
+
+<body>
+    <img id="panicBtn" src="images/eye1.png" style="cursor:pointer;" alt="Toggle">
+    <form class="page" id="myForm">
+
+
+
+        <div class="main">
+            <h1>"Erotic Education" - Student Id Maker CYOA</h1>
+            <hr>
+        </div>
+
+
+
+        <div class="main">
+            <h2>Name of the Instytution:</h2>
+            <div class="vertical">
+                <input type="text" name="school">
+            </div>
+        </div>
+
+
+
+        <div class="main">
+            <h2>Full Name:</h2>
+            <div class="vertical">
+                <input type="text" name="fullname">
+            </div>
+            <h2>Age:</h2>
+            <div class="vertical">
+                <input type="number" name="surname" min="18">
+            </div>
+        </div>
+
+
+
+        <div class="main">
+            <h2>Photo / Image:</h2>
+            <div class="vertical">
+                <label style="margin-bottom: 0; width: 20%;" for="customFileInput" class="file-input-label label">
+                    Choose File
+                </label>
+                <input style="display: none;" type="file" id="customFileInput" onchange="updateFilePreview()"
+                    name="avatar">
+
+                <span class="file-name" id="fileName">No file chosen</span>
+                <section id="imagePreview"></section>
+            </div>
+        </div>
+
+
+
+        <div class="main">
+            <h1>Sex:</h1>
+            <div class="horizontal">
+                <label class="label pointer">
+                    <img src="../images/gender1.png">
+                    <h2>Females</h2>
+                    <input name=" gender" type="radio">
+                </label>
+
+                <label class="label pointer">
+                    <img src="../images/gender2.png">
+                    <h2>Futa</h2>
+                    <input name="gender" type="radio">
+                </label>
+
+                <label class="label pointer">
+                    <img src="../images/gender3.png">
+                    <h2>Male</h2>
+                    <input name="gender" type="radio">
+                </label>
+            </div>
+        </div>
+
+
+        <div class="main">
+            <h1>Degree Program:</h1>
+            <div class="horizontal">
+                <label class="label pointer">
+                    <img src="../images/degree1.png">
+                    <h2>Submissive's degree</h2>
+                    3 years untill graduation
+                    <input name="degree" type="radio">
+                </label>
+                <label class="label pointer">
+                    <img src="../images/degree2.png">
+                    <h2>Switch's degree</h2>
+                    5 years untill graduation
+                    <input name="degree" type="radio">
+                </label>
+                <label class="label pointer">
+                    <img src="../images/degree3.png">
+                    <h2>Dominant's degree</h2>
+                    3 years untill graduation
+                    <input name="degree" type="radio">
+                </label>
+            </div>
+        </div>
+
+
+        <div class="main">
+            <h1>Sexual Preference:</h1>
+            <div class="horizontal">
+                <label class="label pointer">
+                    <img src="">
+                    <h2>Females</h2>
+                    <input name="sexpref" type="checkbox">
+                </label>
+                <label class="label pointer">
+                    <img src="">
+                    <h2>Futas</h2>
+                    <input name="sexpref" type="checkbox">
+                </label>
+                <label class="label pointer">
+                    <img src="">
+                    <h2>Males</h2>
+                    <input name="sexpref" type="checkbox">
+                </label>
+            </div>
+        </div>
+
+
+    </form>
+</body>
+
+<template id="options-classes">
+    <option value=""></option>
+    <option value="Masturbation">Masturbation</option>
+    <option value="Bondage">Bondage</option>
+    <option>servicing</option>
+    <option>exhibitionism</option>
+    <option>dancing</option>
+</template>
+
+<script src="scripts/panic_button.js"></script>
+<script src="scripts/file_button.js"></script>
+<script>
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    };
+</script>
+
+<script>
+    const template = document.getElementById('options-classes').content;
+    document.querySelectorAll('select.classes').forEach(select => {
+        select.appendChild(template.cloneNode(true));
+    });
+</script>
+
+</html>

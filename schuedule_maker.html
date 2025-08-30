@@ -6,155 +6,46 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Special Education Program</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../styles/style_form1.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/style1.css'>
 
 </head>
 
 
 
 <body>
-    <img id="panicBtn" src="../images/eye1.png" style="cursor:pointer;" alt="Toggle">
+    <img id="panicBtn" src="images/eye1.png" style="cursor:pointer;" alt="Toggle">
     <form class="page" id="myForm">
-
-
-
-        <div class="main">
-            <h1>"Special" education program - New student application form<br>CYOA</h1>
-            <hr>
-        </div>
-
-
-
-        <div class="main">
-            <h2>Name of the Instytution:</h2>
-            <div class="vertical">
-                <input type="text" name="school">
-            </div>
-        </div>
-
-
-
-        <div class="main">
-            <h2>Full Name:</h2>
-            <div class="vertical">
-                <input type="text" name="fullname">
-            </div>
-            <h2>Age:</h2>
-            <div class="vertical">
-                <input type="number" name="surname" min="18">
-            </div>
-        </div>
-
-
-
-        <div class="main">
-            <h2>Photo / Image:</h2>
-            <div class="vertical">
-                <label style="margin-bottom: 0; width: 20%;" for="customFileInput" class="file-input-label label">
-                    Choose File
-                </label>
-                <input style="display: none;" type="file" id="customFileInput" onchange="updateFilePreview()"
-                    name="avatar">
-
-                <span class="file-name" id="fileName">No file chosen</span>
-                <section id="imagePreview"></section>
-            </div>
-        </div>
-
-
-
-        <div class="main">
-            <h1>Sex:</h1>
-            <div class="horizontal">
-                <label class="label pointer">
-                    <img src="../images/gender1.png">
-                    <h2>Females</h2>
-                    <input name="gender" type="radio">
-                </label>
-
-                <label class="label pointer">
-                    <img src="../images/gender2.png">
-                    <h2>Futa</h2>
-                    <input name="gender" type="radio">
-                </label>
-                <label class="label pointer">
-                    <img src="../images/gender3.png">
-                    <h2>Male</h2>
-                    <input name="gender" type="radio">
-                </label>
-            </div>
-        </div>
-
-
-        <div class="main">
-            <h1>Degree Program:</h1>
-            <div class="horizontal">
-                <label class="label pointer">
-                    <img src="../images/degree1.png">
-                    <h2>Submissive's degree</h2>
-                    3 years untill graduation
-                    <input name="degree" type="radio">
-                </label>
-                <label class="label pointer">
-                    <img src="../images/degree2.png">
-                    <h2>Switch's degree</h2>
-                    5 years untill graduation
-                    <input name="degree" type="radio">
-                </label>
-                <label class="label pointer">
-                    <img src="../images/degree3.png">
-                    <h2>Dominant's degree</h2>
-                    3 years untill graduation
-                    <input name="degree" type="radio">
-                </label>
-            </div>
-        </div>
-
-        <!--
-        <div class="main">
-            <h1>Sexual Preference:</h1>
-            <div class="horizontal">
-                <label class="label pointer">
-                    <img src="">
-                    <h2>Females</h2>
-                    <input name="sexpref" type="checkbox">
-                </label>
-                <label class="label pointer">
-                    <img src="">
-                    <h2>Futas</h2>
-                    <input name="sexpref" type="checkbox">
-                </label>
-                <label class="label pointer">
-                    <img src="">
-                    <h2>Males</h2>
-                    <input name="sexpref" type="checkbox">
-                </label>
-            </div>
-        </div>
-        -->
 
         <div class="main">
             <h1>Classes:</h1>
             <div class="horizontal">
+
+
+
                 <div class="vertical bordered">
                     <h2>Monday:</h2>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>08:00 - 09:30</h3>
                         <select name="mon1" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>11:00 - 12:30</h3>
                         <select name="mon2" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>14:00 - 15:30</h3>
                         <select name="mon3" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>17:00 - 18:30</h3>
                         <select name="mon4" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>20:00 - 21:30</h3>
                         <select name="mon5" class="classes"></select>
                     </label>
@@ -165,22 +56,27 @@
                 <div class="vertical bordered">
                     <h2>Tuesday:</h2>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>08:00 - 09:30</h3>
                         <select name="tue1" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>11:00 - 12:30</h3>
                         <select name="tue2" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>14:00 - 15:30</h3>
                         <select name="tue3" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>17:00 - 18:30</h3>
                         <select name="tue4" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>20:00 - 21:30</h3>
                         <select name="tue5" class="classes"></select>
                     </label>
@@ -191,22 +87,27 @@
                 <div class="vertical bordered">
                     <h2>Wednesday:</h2>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>08:00 - 09:30</h3>
                         <select name="wed1" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>11:00 - 12:30</h3>
                         <select name="wed2" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>14:00 - 15:30</h3>
                         <select name="wed3" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>17:00 - 18:30</h3>
                         <select name="wed4" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>20:00 - 21:30</h3>
                         <select name="wed5" class="classes"></select>
                     </label>
@@ -217,24 +118,29 @@
                 <div class="vertical bordered">
                     <h2>Thursday:</h2>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>08:00 - 09:30</h3>
-                        <select name="thu1" class="classes"></select>
+                        <select name="wed1" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>11:00 - 12:30</h3>
-                        <select name="thu2" class="classes"></select>
+                        <select name="wed2" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>14:00 - 15:30</h3>
-                        <select name="thu3" class="classes"></select>
+                        <select name="wed3" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>17:00 - 18:30</h3>
-                        <select name="thu4" class="classes"></select>
+                        <select name="wed4" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>20:00 - 21:30</h3>
-                        <select name="thu5" class="classes"></select>
+                        <select name="wed5" class="classes"></select>
                     </label>
                 </div>
 
@@ -243,26 +149,32 @@
                 <div class="vertical bordered">
                     <h2>Friday:</h2>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>08:00 - 09:30</h3>
-                        <select name="fri1" class="classes"></select>
+                        <select name="wed1" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>11:00 - 12:30</h3>
-                        <select name="fri2" class="classes"></select>
+                        <select name="wed2" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>14:00 - 15:30</h3>
-                        <select name="fri3" class="classes"></select>
+                        <select name="wed3" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>17:00 - 18:30</h3>
-                        <select name="fri4" class="classes"></select>
+                        <select name="wed4" class="classes"></select>
                     </label>
                     <label class="label">
+                        <img src="images/freetime.png">
                         <h3>20:00 - 21:30</h3>
-                        <select name="fri5" class="classes"></select>
+                        <select name="wed5" class="classes"></select>
                     </label>
                 </div>
+
             </div>
         </div>
 
@@ -270,27 +182,49 @@
 </body>
 
 <template id="options-classes">
+    <optgroup></optgroup>
     <option value=""></option>
-    <option value="Masturbation">Masturbation</option>
-    <option value="Bondage">Bondage</option>
-    <option>servicing</option>
-    <option>exhibitionism</option>
-    <option>dancing</option>
+    <option>math</option>
+    <option>english</option>
+    <option>P.E.</option>
 </template>
 
-<script src="../scripts/panic_button.js"></script>
-<script src="../scripts/file_button.js"></script>
+<script src="scripts/panic_button.js"></script>
+<script src="scripts/file_button.js"></script>
 <script>
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);
     };
 </script>
 
+
 <script>
     const template = document.getElementById('options-classes').content;
     document.querySelectorAll('select.classes').forEach(select => {
         select.appendChild(template.cloneNode(true));
     });
+
+    // Map of class names to image paths
+    const classImages = {
+        "math": "images/bondage_class.png",
+        "english": "images/bondage_class.png",
+        "P.E.": "images/bondage_class.png"
+    };
+
+    // Add event listener to each select
+    document.querySelectorAll('select.classes').forEach(select => {
+        select.addEventListener('change', function () {
+            const selectedValue = this.value;
+            const imgElement = this.closest('label').querySelector('img');
+
+            if (classImages[selectedValue]) {
+                imgElement.src = classImages[selectedValue];
+            } else {
+                imgElement.src = "images/freetime.png"; // default image
+            }
+        });
+    });
 </script>
+
 
 </html>

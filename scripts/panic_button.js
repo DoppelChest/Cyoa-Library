@@ -12,14 +12,14 @@ toggleBtn.addEventListener('click', () => {
             div.style.opacity = '1';
             div.style.pointerEvents = 'auto';
             document.title = originalTitle;
-            toggleBtn.src = '../images/eye1.png';
+            toggleBtn.src = 'images/eye1.png';
             toggleBtn.classList.remove('panic-mode');
         } else {
             div.style.visibility = 'hidden';
             div.style.opacity = '0';
             div.style.pointerEvents = 'none';
             document.title = hiddenTitle;
-            toggleBtn.src = '../images/eye2.png';
+            toggleBtn.src = 'images/eye2.png';
             toggleBtn.classList.add('panic-mode');
         }
     });
